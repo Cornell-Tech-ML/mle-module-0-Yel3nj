@@ -6,3 +6,8 @@
 * Docs: https://minitorch.github.io/
 
 * Overview: https://minitorch.github.io/module0.html
+
+* Graphs:
+* <img width="749" alt="streamlit-params" src="https://github.com/Cornell-Tech-ML/mle-module-0-Yel3nj/assets/106493434/f159703e-ec53-41c9-8765-9995f7093493">
+* ![streamlit-plot](https://github.com/Cornell-Tech-ML/mle-module-0-Yel3nj/assets/106493434/f8488219-d1cb-4819-be83-8f036c8eae9e)
+
