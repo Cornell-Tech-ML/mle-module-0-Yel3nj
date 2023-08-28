@@ -8,7 +8,7 @@
 * Overview: https://minitorch.github.io/module0.html
 
 * Graphs:
-  ![streamlit-plot](https://github.com/Cornell-Tech-ML/mle-module-0-Yel3nj/assets/106493434/a65f71e9-e05d-4caf-b700-f91981b3cb87)
-   <img width="749" alt="streamlit-params" src="https://github.com/Cornell-Tech-ML/mle-module-0-Yel3nj/assets/106493434/d97e82ea-ac44-4caa-b1ce-dfbad922fe47">
+* ![streamlit-plot](https://github.com/Cornell-Tech-ML/mle-module-0-Yel3nj/assets/106493434/a65f71e9-e05d-4caf-b700-f91981b3cb87)
+* <img width="749" alt="streamlit-params" src="https://github.com/Cornell-Tech-ML/mle-module-0-Yel3nj/assets/106493434/d97e82ea-ac44-4caa-b1ce-dfbad922fe47">
 
 
