@@ -29,6 +29,7 @@ def neg(x: float) -> float:
     "$f(x) = -x$"
     return -x
 
+
 def lt(x: float, y: float) -> float:
     "$f(x) =$ 1.0 if x is less than y else 0.0"
     return 1.0 if x < y else 0.0
@@ -91,6 +92,7 @@ def log_back(x: float, d: float) -> float:
     f_prime = 1 / x
     return d * f_prime
 
+
 def inv(x: float) -> float:
     "$f(x) = 1/x$"
     return 1 / x
@@ -127,7 +129,7 @@ def map(fn: Callable[[float], float]) -> Callable[[Iterable[float]], Iterable[fl
          new list
     """
     def apply(ls: Iterable[float]) -> Iterable[float]:
-        return [fn(ls[i]) for i in range(len(ls))]
+        return [fn(x) for x in ls]
     return apply
 
 
@@ -135,6 +137,7 @@ def negList(ls: Iterable[float]) -> Iterable[float]:
     "Use `map` and `neg` to negate each element in `ls`"
     ng: Callable[[Iterable[float]], Iterable[float]] = map(neg)
     return ng(ls)
+
 
 def zipWith(
     fn: Callable[[float, float], float]
@@ -153,7 +156,7 @@ def zipWith(
 
     """
     def zp(ls1: Iterable[float], ls2: Iterable[float]) -> Iterable[float]:
-        return [fn(ls1[i], ls2[i]) for i in range(len(ls1))]
+        return [fn(x, y) for x, y in zip(ls1, ls2)]
     return zp
 
 
@@ -188,14 +191,11 @@ def reduce(
 
 def sum(ls: Iterable[float]) -> float:
     "Sum up a list using `reduce` and `add`."
-    if not ls:
-        return 0
-    sumrd: Callable[[Iterable[float]], float] = reduce(add, ls[0])
-    return sumrd(ls[1:])
+    sumls: Callable[[Iterable[float]], float] = reduce(add, 0.0)
+    return sumls(ls)
+
 
 def prod(ls: Iterable[float]) -> float:
     "Product of a list using `reduce` and `mul`."
-    if not ls:
-        return 0
-    prodrd: Callable[[Iterable[float]], float] = reduce(mul, ls[0])
-    return prodrd(ls[1:])
+    prodls: Callable[[Iterable[float]], float] = reduce(mul, 1.0)
+    return prodls(ls)
